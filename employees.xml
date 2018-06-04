@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<company>
+	<staff>
+		<firstname>Gloria</firstname>
+		<lastname>Carrillo</lastname>
+		<nickname>GC001</nickname>
+		<salary>100000</salary>
+	</staff>
+	<staff>
+		<firstname>Luis</firstname>
+		<lastname>Hernández</lastname>
+		<nickname>LH002</nickname>
+		<salary>200000</salary>
+	</staff>
+		<staff>
+		<firstname>Beatriz</firstname>
+		<lastname>Jimenez</lastname>
+		<nickname>BJ003</nickname>
+		<salary>300000</salary>
+	</staff>
+</company>
