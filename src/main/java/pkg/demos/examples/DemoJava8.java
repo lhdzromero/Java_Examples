@@ -9,6 +9,16 @@ import java.util.Comparator;
 import java.util.function.Predicate;
 import java.util.Optional;
 
+//Librerias para ejecutar javascript
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptEngine;
+import javax.script.ScriptException;
+
+
+import java.util.Base64;
+import java.util.UUID;
+import java.io.UnsupportedEncodingException;
+
 
 /*
  * https://www.tutorialspoint.com/java8
@@ -194,4 +204,56 @@ public class DemoJava8 {
        return value1 + value2;
    }
    
+   
+   //Ejecutando javascript desde java 
+   public static void DemoJJS(){
+       
+       System.out.println("\nEjecutando javascript...");
+       ScriptEngineManager sem = new ScriptEngineManager();
+       ScriptEngine nashorn = sem.getEngineByName("nashorn");
+       
+       String name = "Gloria";
+       Integer result = null;
+       
+       try{
+           nashorn.eval("print('" + name + "')");
+           result = (Integer)nashorn.eval("37 + 1");
+           
+       }catch(ScriptException ex){
+           System.out.println("Error ejecutando script: " + ex.getMessage());
+       }
+       
+       System.out.println(result.toString());
+   }
+   
+   
+   public static void TestEncoder(){
+       try {
+           //Encode using basic encoder
+           String base64encodedString = Base64.getEncoder().encodeToString("TutorialsPoint?java8".getBytes("utf-8"));
+           System.out.println("\nBase64 Encoded String (Basic): " + base64encodedString);
+           
+           //Decode
+           byte[] base64decodeBytes = Base64.getDecoder().decode(base64encodedString);
+           System.out.println("Original String: " + new String(base64decodeBytes, "utf-8"));
+           
+           base64encodedString = Base64.getUrlEncoder().encodeToString("TutorialsPoint?java8".getBytes("utf-8"));
+           System.out.println("Base64 Encoded String (URL) :" + base64encodedString);
+           
+           StringBuilder sb = new StringBuilder();
+           
+           for (int i = 0; i < 10; i++) {
+               sb.append(UUID.randomUUID().toString());
+           }
+           
+           byte[] mimeBytes = sb.toString().getBytes("utf-8");
+           String mimeEncodedString = Base64.getMimeEncoder().encodeToString(mimeBytes);
+           System.out.println("Base64 Encoded String (MIME): " + mimeEncodedString);
+           
+       } catch (UnsupportedEncodingException e) {
+           // TODO: handle exception 
+           System.out.println("Error: " + e.getMessage());
+        }
+   }
+
 }

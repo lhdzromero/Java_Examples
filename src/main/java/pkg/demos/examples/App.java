@@ -38,6 +38,9 @@ public class App {
         Optional<Integer> b = Optional.of(value2);
         System.out.println(demo.sum(a, b));
         
+        demo.DemoJJS();
+        demo.TestEncoder();
+        
         /*DemoStreamsJava8 dsj = new DemoStreamsJava8();
         dsj.StreamJava7();
         dsj.StreamJava8();
