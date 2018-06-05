@@ -242,9 +242,8 @@ public class DemoJava8 {
            
            StringBuilder sb = new StringBuilder();
            
-           for (int i = 0; i < 10; i++) {
+           for (int i = 0; i < 10; i++)
                sb.append(UUID.randomUUID().toString());
-           }
            
            byte[] mimeBytes = sb.toString().getBytes("utf-8");
            String mimeEncodedString = Base64.getMimeEncoder().encodeToString(mimeBytes);
