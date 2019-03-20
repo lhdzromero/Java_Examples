@@ -33,7 +33,7 @@ public class DemoJava8 {
     public DemoJava8(){
         //Inicializamos la primer lista
         lstNames1 = new ArrayList<String>();
-        lstNames1.add("Gloria");
+        lstNames1.add("Ignacio");
         lstNames1.add("Aidan");
         lstNames1.add("Aindri");
         lstNames1.add("Constanza");
@@ -46,7 +46,7 @@ public class DemoJava8 {
         
         //Inicializamos la segunda lista
         lstNames2 = new ArrayList<String>();
-        lstNames2.add("Gloria");
+        lstNames2.add("Ignacio");
         lstNames2.add("Aindri");
         lstNames2.add("Aidan");
         lstNames2.add("Constanza");
