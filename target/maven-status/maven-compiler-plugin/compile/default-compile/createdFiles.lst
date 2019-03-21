@@ -1,4 +1,5 @@
 pkg/desing/patterns/creational/singleton/SerializedSingleton.class
+pkg/desing/patterns/structural/bridge/Triangule.class
 pkg/desing/patterns/creational/singleton/ThreadSafeSingleton.class
 pkg/desing/patterns/creational/abstractfactory/HighEndPhone.class
 pkg/desing/patterns/creational/abstractfactory/SmartPhoneAbstractFactory.class
@@ -19,14 +20,18 @@ pkg/desing/patterns/creational/singleton/EagerInitializedSingleton.class
 pkg/desing/patterns/creational/singleton/EnumSingleton.class
 pkg/desing/patterns/creational/factory/PC.class
 pkg/desing/patterns/creational/abstractfactory/MidRangePhone.class
+pkg/desing/patterns/structural/bridge/RedColor.class
 pkg/desing/patterns/creational/DemoCreationalPatterns.class
 pkg/demos/examples/Car.class
 pkg/demos/examples/App.class
+pkg/desing/patterns/structural/bridge/BlueColor.class
+pkg/desing/patterns/structural/bridge/Shape.class
 pkg/desing/patterns/structural/proxy/CommandExecutorImpl.class
 pkg/desing/patterns/creational/singleton/StaticBlockSingleton.class
 pkg/desing/patterns/creational/singleton/BillPughSingleton$1.class
 pkg/demos/examples/DemoReadXML.class
 pkg/demos/examples/DemoJava8.class
+pkg/desing/patterns/structural/bridge/Pentagon.class
 pkg/desing/patterns/structural/composite/Circule.class
 pkg/desing/patterns/creational/DemoCreational.class
 pkg/desing/patterns/structural/composite/Shape.class
@@ -43,6 +48,7 @@ pkg/desing/patterns/DemosPatterns.class
 pkg/desing/patterns/creational/factory/Server.class
 pkg/demos/examples/DemoStreamsJava8.class
 pkg/demos/examples/FourWheeler.class
+pkg/desing/patterns/structural/bridge/Color.class
 pkg/desing/patterns/creational/abstractfactory/MidRangePhoneFactory.class
 pkg/desing/patterns/creational/singleton/BillPughSingleton$SingletonHelper.class
 pkg/desing/patterns/creational/singleton/SerializedSingleton$1.class
@@ -52,7 +58,8 @@ pkg/desing/patterns/creational/DemoCreationalPatterns$1.class
 pkg/desing/patterns/creational/prototype/Employees.class
 pkg/demos/examples/DemoJava8$GreetingService.class
 pkg/desing/patterns/creational/factory/Computer.class
-pkg/desing/patterns/structural/proxy/CommandExecutorProxy.class
 pkg/desing/patterns/structural/adapter/Socket.class
+pkg/desing/patterns/structural/proxy/CommandExecutorProxy.class
+pkg/desing/patterns/structural/bridge/GreenColor.class
 pkg/demos/examples/HackInmutable.class
 pkg/desing/patterns/creational/singleton/SerializedSingleton$SingletonHelper.class
