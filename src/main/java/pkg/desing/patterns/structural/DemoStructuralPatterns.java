@@ -1,18 +1,18 @@
 package pkg.desing.patterns.structural;
 
+import javax.naming.Reference;
+
 import pkg.desing.patterns.structural.adapter.Volt;
 import pkg.desing.patterns.structural.adapter.SocketAdapter;
 import pkg.desing.patterns.structural.adapter.SocketClassAdapterImpl;
 import pkg.desing.patterns.structural.adapter.SocketObjectAdapterImpl;
-
 import pkg.desing.patterns.structural.composite.Shape;
 import pkg.desing.patterns.structural.composite.Triangule;
 import pkg.desing.patterns.structural.composite.Circule;
 import pkg.desing.patterns.structural.composite.DrawingShape;
-
 import pkg.desing.patterns.structural.proxy.CommandExecutor;
 import pkg.desing.patterns.structural.proxy.CommandExecutorProxy;
-
+import pkg.desing.patterns.structural.bridge.*;
 
 public class DemoStructuralPatterns {
     
@@ -21,6 +21,7 @@ public class DemoStructuralPatterns {
         DemoAdapterPattern();
         DemoCompositePattern();
         DemoProxyPattern();
+        DemoBridgePattern();
     }
     
     private static void DemoAdapterPattern(){
@@ -98,6 +99,21 @@ public class DemoStructuralPatterns {
         } catch (Exception e) {
             System.out.println("Exception Message::" + e.getMessage());
         }
+   }
+   
+   private static void DemoBridgePattern(){
+       System.out.println("\nBridge Pattern...");
+       
+       pkg.desing.patterns.structural.bridge.Shape tri = new pkg.desing.patterns.structural.bridge.Triangule(new RedColor());
+       tri.applyColor();
+       
+       pkg.desing.patterns.structural.bridge.Shape pent = new Pentagon(new GreenColor());
+       pent.applyColor();
+       
+       pent = new Pentagon(new BlueColor());
+       pent.applyColor();
+       
+       System.out.println("");
    }
    
    
