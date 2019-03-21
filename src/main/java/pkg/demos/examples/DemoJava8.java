@@ -184,7 +184,7 @@ public class DemoJava8 {
        GreetingService greetService2 = (message) -> System.out.println("Hello " + message);
        
        System.out.println("\nGreetins");
-       greetService1.sayMessage("Gloria");
+       greetService1.sayMessage("Aidan");
        greetService2.sayMessage("Luis");
        System.out.println("");
    }
@@ -212,12 +212,12 @@ public class DemoJava8 {
        ScriptEngineManager sem = new ScriptEngineManager();
        ScriptEngine nashorn = sem.getEngineByName("nashorn");
        
-       String name = "Gloria";
+       String name = "Aindri";
        Integer result = null;
        
        try{
            nashorn.eval("print('" + name + "')");
-           result = (Integer)nashorn.eval("37 + 1");
+           result = (Integer)nashorn.eval(" + 1");
            
        }catch(ScriptException ex){
            System.out.println("Error ejecutando script: " + ex.getMessage());

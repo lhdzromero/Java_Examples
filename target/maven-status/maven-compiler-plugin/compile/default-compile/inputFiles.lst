@@ -7,7 +7,9 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/EagerInitializedSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/ThreadSafeSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/LowRangePhoneFactory.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/Volt.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/HackInmutable.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketClassAdapterImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/MidRangePhone.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/DemoCreationalPatterns.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/Server.java
@@ -16,10 +18,13 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/MidRangePhoneFactory.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/Computer.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/App.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/Socket.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/HighEndPhoneFactory.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/SmartPhoneAbstractFactory.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketAdapter.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoJava8.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/LowRangePhone.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/DemoStructuralPatterns.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/DemosPatterns.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/DemoCreational.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoStreamsJava8.java
@@ -28,4 +33,5 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/builder/Computer.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/BillPughSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/SerializedSingleton.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketObjectAdapterImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/PC.java
