@@ -14,7 +14,8 @@ public class App {
     
     public static void main(String args []) throws FileNotFoundException, IOException, ClassNotFoundException {
        DemosPatterns.DemosRun();
-        
+       
+       /*
         HackInmutable.InmutableEmployee emp = new  HackInmutable.InmutableEmployee(1,"John Doe", 100f);
         System.out.printf("The salary of %1$s is %2$s bitcoins. Salary should be hidden: /\n", emp.name(), HackInmutable.giveMe(emp,"salary"));
         HackInmutable.hackIt(emp, "salary", 600f);
@@ -40,6 +41,8 @@ public class App {
         
         demo.DemoJJS();
         demo.TestEncoder();
+        */
+        
         
         /*DemoStreamsJava8 dsj = new DemoStreamsJava8();
         dsj.StreamJava7();
