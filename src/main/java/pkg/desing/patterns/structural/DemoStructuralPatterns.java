@@ -1,7 +1,5 @@
 package pkg.desing.patterns.structural;
 
-import javax.naming.Reference;
-
 import pkg.desing.patterns.structural.adapter.Volt;
 import pkg.desing.patterns.structural.adapter.SocketAdapter;
 import pkg.desing.patterns.structural.adapter.SocketClassAdapterImpl;
@@ -13,6 +11,8 @@ import pkg.desing.patterns.structural.composite.DrawingShape;
 import pkg.desing.patterns.structural.proxy.CommandExecutor;
 import pkg.desing.patterns.structural.proxy.CommandExecutorProxy;
 import pkg.desing.patterns.structural.bridge.*;
+import pkg.desing.patterns.structural.decorator.*;
+
 
 public class DemoStructuralPatterns {
     
@@ -22,8 +22,9 @@ public class DemoStructuralPatterns {
         DemoCompositePattern();
         DemoProxyPattern();
         DemoBridgePattern();
+        DemoDecoratorPattern();
     }
-    
+     
     private static void DemoAdapterPattern(){
         System.out.println("\nAdapter Pattern...");
         testClassAdapter();
@@ -116,5 +117,15 @@ public class DemoStructuralPatterns {
        System.out.println("");
    }
    
-   
+   private static void DemoDecoratorPattern(){
+      System.out.println("\nDecorator Pattern...");
+      Car sportsCar = new SportsCar(new BasicCar());
+      sportsCar.assemble();
+      System.out.println("\n*****");
+      
+      Car sportsLuxuryCar = new SportsCar(new LuxuryCar(new BasicCar()));
+      sportsLuxuryCar.assemble();
+       System.out.println("\n");
+   }
+  
 }
