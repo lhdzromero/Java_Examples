@@ -15,6 +15,7 @@ pkg/desing/patterns/structural/adapter/SocketClassAdapterImpl.class
 pkg/desing/patterns/structural/adapter/Volt.class
 pkg/desing/patterns/creational/abstractfactory/SmartPhone.class
 pkg/demos/examples/DemoJava8$1.class
+pkg/desing/patterns/behavior/observer/Observer.class
 pkg/demos/examples/HackInmutable$InmutableEmployee.class
 pkg/demos/examples/Vehicle.class
 pkg/desing/patterns/creational/singleton/EagerInitializedSingleton.class
@@ -25,6 +26,7 @@ pkg/desing/patterns/structural/bridge/RedColor.class
 pkg/desing/patterns/creational/DemoCreationalPatterns.class
 pkg/demos/examples/Car.class
 pkg/demos/examples/App.class
+pkg/desing/patterns/behavior/observer/MyTopic.class
 pkg/desing/patterns/structural/bridge/BlueColor.class
 pkg/desing/patterns/behavior/mediator/User.class
 pkg/desing/patterns/structural/bridge/Shape.class
@@ -45,6 +47,7 @@ pkg/desing/patterns/creational/builder/Computer.class
 pkg/desing/patterns/behavior/mediator/ChatMediatorImpl.class
 pkg/desing/patterns/structural/composite/DrawingShape.class
 pkg/desing/patterns/creational/factory/ComputerFactory.class
+pkg/desing/patterns/behavior/observer/Subject.class
 pkg/desing/patterns/creational/abstractfactory/LowRangePhone.class
 pkg/desing/patterns/structural/DemoStructuralPatterns.class
 pkg/desing/patterns/structural/adapter/SocketObjectAdapterImpl.class
@@ -70,6 +73,7 @@ pkg/desing/patterns/structural/decorator/BasicCar.class
 pkg/desing/patterns/behavior/mediator/UserImpl.class
 pkg/demos/examples/DemoJava8$GreetingService.class
 pkg/desing/patterns/creational/factory/Computer.class
+pkg/desing/patterns/behavior/observer/MyTopicSubscriber.class
 pkg/desing/patterns/structural/adapter/Socket.class
 pkg/desing/patterns/structural/proxy/CommandExecutorProxy.class
 pkg/desing/patterns/structural/bridge/GreenColor.class

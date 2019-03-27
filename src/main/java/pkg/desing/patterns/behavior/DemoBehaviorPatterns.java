@@ -6,12 +6,45 @@ import pkg.desing.patterns.behavior.mediator.User;
 import pkg.desing.patterns.behavior.mediator.UserImpl;
 import pkg.desing.patterns.behavior.template.*;
 import pkg.desing.patterns.behavior.template.HouseTemplate;
+import pkg.desing.patterns.behavior.observer.*;
 
+ 
 public class DemoBehaviorPatterns {
     
     public static void DemoBehaviors(){
         DemoTemplatePattern();
         DemoMediatorPattern();
+        DemoObserverPattern();
+    }
+    
+    
+    private static void DemoObserverPattern(){
+        System.out.println("\nObserver Pattern...");
+        
+        //Create subject
+        MyTopic topic = new MyTopic();
+        
+        //Create observers
+        Observer obj1 = new MyTopicSubscriber("Obj1");
+        Observer obj2 = new MyTopicSubscriber("Obj2");
+        Observer obj3 = new MyTopicSubscriber("Obj3");
+        
+        //register observers to the subject
+        topic.register(obj1);
+        topic.register(obj2);
+        topic.register(obj3);
+        
+        //attach observer to subject 
+        obj1.setSubject(topic);
+        obj2.setSubject(topic);
+        obj3.setSubject(topic);
+        
+        //check if any update is available
+        obj1.update();
+        
+        //now send message to subject
+        topic.postMessage("New Message");
+        
     }
     
     private static void DemoMediatorPattern(){

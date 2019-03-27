@@ -4,6 +4,7 @@
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoReadXML.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/bridge/RedColor.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/ThreadSafeSingleton.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/MyTopicSubscriber.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/Volt.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/bridge/Pentagon.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketClassAdapterImpl.java
@@ -36,6 +37,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/LuxuryCar.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/proxy/CommandExecutor.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/EagerInitializedSingleton.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/Observer.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/SportsCar.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/Triangule.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/LowRangePhoneFactory.java
@@ -51,6 +53,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/mediator/UserImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/HighEndPhoneFactory.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/SmartPhoneAbstractFactory.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/MyTopic.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/LowRangePhone.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/proxy/CommandExecutorImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/DemoStructuralPatterns.java
@@ -62,3 +65,4 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/SerializedSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketObjectAdapterImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/CarDecorator.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/Subject.java
