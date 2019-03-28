@@ -4,10 +4,14 @@ import pkg.desing.patterns.behavior.mediator.ChatMediator;
 import pkg.desing.patterns.behavior.mediator.ChatMediatorImpl;
 import pkg.desing.patterns.behavior.mediator.User;
 import pkg.desing.patterns.behavior.mediator.UserImpl;
+import pkg.desing.patterns.behavior.memento.FileWriterCaretaker;
+import pkg.desing.patterns.behavior.memento.FileWriterUtil;
 import pkg.desing.patterns.behavior.template.*;
-import pkg.desing.patterns.behavior.template.HouseTemplate;
 import pkg.desing.patterns.behavior.observer.*;
-
+import pkg.desing.patterns.behavior.state.State;
+import pkg.desing.patterns.behavior.state.TVContext;
+import pkg.desing.patterns.behavior.state.TVStartState;
+import pkg.desing.patterns.behavior.state.TVStopState;
  
 public class DemoBehaviorPatterns {
     
@@ -15,7 +19,62 @@ public class DemoBehaviorPatterns {
         DemoTemplatePattern();
         DemoMediatorPattern();
         DemoObserverPattern();
+        DemoStatePattern();
+        DemoMementoPattern();
     }
+    
+    
+    private static void DemoMementoPattern(){
+        System.out.println("\nMemento Pattern...");
+        
+        FileWriterCaretaker caretaker = new FileWriterCaretaker();
+        
+        FileWriterUtil fileWriter = new FileWriterUtil("data.txt");
+        fileWriter.write("First Set of Data\n");
+        System.out.println(fileWriter + "\n\n");
+        
+        //lets save the file
+        caretaker.save(fileWriter);
+        
+        //now write something else
+        fileWriter.write("Second Set of Data\n");
+        //checking file contents
+        System.out.println(fileWriter + "\n\n");
+        
+        //lets undo to last save
+        caretaker.undo(fileWriter);
+        
+        //checking file content again
+        System.out.println(fileWriter + "\n\n");
+        
+        
+        fileWriter.write("Third Set of Data\n");
+        System.out.println(fileWriter + "\n\n");
+        
+        caretaker.save(fileWriter);
+        
+        fileWriter.write("Fourth Set of Data\n");
+        System.out.println(fileWriter + "\n\n");
+        
+        caretaker.undo(fileWriter);
+        System.out.println(fileWriter + "\n\n");        
+    }
+    
+    
+    private static void DemoStatePattern(){
+        System.out.println("\nState Pattern...");
+        
+        TVContext context = new TVContext();
+        State tvStartState = new TVStartState();
+        State tvStopState = new TVStopState();
+        
+        context.setState(tvStartState);
+        context.doAction();
+        
+        context.setState(tvStopState);
+        context.doAction();
+    }
+    
     
     
     private static void DemoObserverPattern(){
