@@ -2,6 +2,7 @@ pkg/desing/patterns/creational/singleton/SerializedSingleton.class
 pkg/desing/patterns/structural/bridge/Triangule.class
 pkg/desing/patterns/creational/singleton/ThreadSafeSingleton.class
 pkg/desing/patterns/creational/abstractfactory/HighEndPhone.class
+pkg/desing/patterns/behavior/state/TVContext.class
 pkg/desing/patterns/structural/decorator/SportsCar.class
 pkg/desing/patterns/creational/abstractfactory/SmartPhoneAbstractFactory.class
 pkg/desing/patterns/structural/adapter/SocketAdapter.class
@@ -27,8 +28,10 @@ pkg/desing/patterns/creational/DemoCreationalPatterns.class
 pkg/demos/examples/Car.class
 pkg/demos/examples/App.class
 pkg/desing/patterns/behavior/observer/MyTopic.class
+pkg/desing/patterns/behavior/state/State.class
 pkg/desing/patterns/structural/bridge/BlueColor.class
 pkg/desing/patterns/behavior/mediator/User.class
+pkg/desing/patterns/behavior/state/TVStartState.class
 pkg/desing/patterns/structural/bridge/Shape.class
 pkg/desing/patterns/structural/proxy/CommandExecutorImpl.class
 pkg/desing/patterns/behavior/template/GlassHouse.class
@@ -37,11 +40,14 @@ pkg/desing/patterns/structural/decorator/LuxuryCar.class
 pkg/desing/patterns/creational/singleton/BillPughSingleton$1.class
 pkg/desing/patterns/structural/decorator/CarDecorator.class
 pkg/demos/examples/DemoReadXML.class
+pkg/desing/patterns/behavior/memento/FileWriterUtil.class
 pkg/demos/examples/DemoJava8.class
 pkg/desing/patterns/structural/bridge/Pentagon.class
 pkg/desing/patterns/structural/composite/Circule.class
+pkg/desing/patterns/behavior/memento/FileWriterUtil$Memento.class
 pkg/desing/patterns/creational/DemoCreational.class
 pkg/desing/patterns/structural/composite/Shape.class
+pkg/desing/patterns/behavior/memento/FileWriterCaretaker.class
 pkg/desing/patterns/behavior/mediator/ChatMediator.class
 pkg/desing/patterns/creational/builder/Computer.class
 pkg/desing/patterns/behavior/mediator/ChatMediatorImpl.class
@@ -76,6 +82,7 @@ pkg/desing/patterns/creational/factory/Computer.class
 pkg/desing/patterns/behavior/observer/MyTopicSubscriber.class
 pkg/desing/patterns/structural/adapter/Socket.class
 pkg/desing/patterns/structural/proxy/CommandExecutorProxy.class
+pkg/desing/patterns/behavior/state/TVStopState.class
 pkg/desing/patterns/structural/bridge/GreenColor.class
 pkg/demos/examples/HackInmutable.class
 pkg/desing/patterns/behavior/template/HouseTemplate.class
