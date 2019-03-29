@@ -1,5 +1,7 @@
 package pkg.desing.patterns.behavior;
 
+import pkg.desing.patterns.behavior.interpreter.InterpreterClient;
+import pkg.desing.patterns.behavior.interpreter.InterpreterContext;
 import pkg.desing.patterns.behavior.mediator.ChatMediator;
 import pkg.desing.patterns.behavior.mediator.ChatMediatorImpl;
 import pkg.desing.patterns.behavior.mediator.User;
@@ -21,6 +23,22 @@ public class DemoBehaviorPatterns {
         DemoObserverPattern();
         DemoStatePattern();
         DemoMementoPattern();
+        DemoInterpreterPatern();
+    }
+    
+    
+    private static void DemoInterpreterPatern(){
+        System.out.println("\n Interpreter Patern");
+        
+        String str1 = "28 in Binary";
+        String str2 = "28 in Hexadecimal";
+        
+        InterpreterClient ec = new InterpreterClient(new InterpreterContext());
+        
+        System.out.println(str1 + " " + ec.interpret(str1));
+        
+        System.out.println(str2 + " " + ec.interpret(str2));
+        
     }
     
     

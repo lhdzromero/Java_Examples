@@ -3,6 +3,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/StaticBlockSingleton.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoReadXML.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/bridge/RedColor.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/IntToHexExpression.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/TVContext.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/ThreadSafeSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/MyTopicSubscriber.java
@@ -17,6 +18,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/template/WoodenHouse.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/Computer.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/Socket.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/InterpreterContext.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/mediator/ChatMediator.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/mediator/User.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/DemoBehaviorPatterns.java
@@ -42,6 +44,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/proxy/CommandExecutor.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/EagerInitializedSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/Observer.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/IntToBinaryExpression.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/SportsCar.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/Triangule.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/LowRangePhoneFactory.java
@@ -63,6 +66,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/proxy/CommandExecutorImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/DemoStructuralPatterns.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/memento/FileWriterCaretaker.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/Expression.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/DemoCreational.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/proxy/CommandExecutorProxy.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/BasicCar.java
@@ -72,3 +76,4 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketObjectAdapterImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/CarDecorator.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/Subject.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/InterpreterClient.java
