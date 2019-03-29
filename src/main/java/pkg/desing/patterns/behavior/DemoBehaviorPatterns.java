@@ -2,6 +2,11 @@ package pkg.desing.patterns.behavior;
 
 import pkg.desing.patterns.behavior.interpreter.InterpreterClient;
 import pkg.desing.patterns.behavior.interpreter.InterpreterContext;
+import pkg.desing.patterns.behavior.iterator.Channel;
+import pkg.desing.patterns.behavior.iterator.ChannelCollection;
+import pkg.desing.patterns.behavior.iterator.ChannelCollectionImpl;
+import pkg.desing.patterns.behavior.iterator.ChannelIterator;
+import pkg.desing.patterns.behavior.iterator.ChannelTypeEnum;
 import pkg.desing.patterns.behavior.mediator.ChatMediator;
 import pkg.desing.patterns.behavior.mediator.ChatMediatorImpl;
 import pkg.desing.patterns.behavior.mediator.User;
@@ -23,12 +28,41 @@ public class DemoBehaviorPatterns {
         DemoObserverPattern();
         DemoStatePattern();
         DemoMementoPattern();
-        DemoInterpreterPatern();
+        DemoInterpreterPattern();
+        DemoIteratorPattern();
     }
     
     
-    private static void DemoInterpreterPatern(){
-        System.out.println("\n Interpreter Patern");
+    private static void DemoIteratorPattern(){
+        System.out.println("\nIterator Pattern");
+        ChannelCollection channels = new ChannelCollectionImpl();
+        channels.addChannel(new Channel(98.5, ChannelTypeEnum.ENGLISH));
+        channels.addChannel(new Channel(99.5, ChannelTypeEnum.SPANISH));
+        channels.addChannel(new Channel(100.5, ChannelTypeEnum.FRENCH));
+        channels.addChannel(new Channel(101.5, ChannelTypeEnum.ENGLISH));
+        channels.addChannel(new Channel(102.5, ChannelTypeEnum.SPANISH));
+        channels.addChannel(new Channel(103.5, ChannelTypeEnum.FRENCH));
+        channels.addChannel(new Channel(104.5, ChannelTypeEnum.ENGLISH));
+        channels.addChannel(new Channel(105.5, ChannelTypeEnum.SPANISH));
+        channels.addChannel(new Channel(106.5, ChannelTypeEnum.FRENCH));
+        
+        ChannelIterator baseIterator = channels.iterator(ChannelTypeEnum.ALL);
+        while(baseIterator.hasNext()){
+            Channel c = baseIterator.next();
+            System.out.println(c.toString());
+        }
+        
+        System.out.println("*******************************");
+        ChannelIterator englishIterator = channels.iterator(ChannelTypeEnum.ENGLISH);
+        while(englishIterator.hasNext()){
+            Channel c = englishIterator.next();
+            System.out.println(c.toString());
+        }   
+    }
+    
+    
+    private static void DemoInterpreterPattern(){
+        System.out.println("\n Interpreter Pattern");
         
         String str1 = "28 in Binary";
         String str2 = "28 in Hexadecimal";

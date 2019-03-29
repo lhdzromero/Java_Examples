@@ -13,6 +13,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/SocketClassAdapterImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/MidRangePhone.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/DemoCreationalPatterns.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/iterator/ChannelCollectionImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/HighEndPhone.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/TVStopState.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/template/WoodenHouse.java
@@ -35,8 +36,10 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/Circule.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/BillPughSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/State.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/iterator/ChannelIterator.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/template/GlassHouse.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/DrawingShape.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/iterator/ChannelTypeEnum.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/PC.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/EnumSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/prototype/Employees.java
@@ -45,6 +48,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/EagerInitializedSingleton.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/Observer.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/IntToBinaryExpression.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/iterator/Channel.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/SportsCar.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/Triangule.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/LowRangePhoneFactory.java
@@ -77,3 +81,4 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/decorator/CarDecorator.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/Subject.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/InterpreterClient.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/iterator/ChannelCollection.java
