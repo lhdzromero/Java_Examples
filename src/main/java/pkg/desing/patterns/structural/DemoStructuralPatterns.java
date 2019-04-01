@@ -12,18 +12,63 @@ import pkg.desing.patterns.structural.proxy.CommandExecutor;
 import pkg.desing.patterns.structural.proxy.CommandExecutorProxy;
 import pkg.desing.patterns.structural.bridge.*;
 import pkg.desing.patterns.structural.decorator.*;
+import pkg.desing.patterns.structural.facade.ShapeMaker;
+import pkg.desing.patterns.structural.flyweight.CoffeeFlavour;
+import pkg.desing.patterns.structural.flyweight.CoffeeShop;
 
 
 public class DemoStructuralPatterns {
     
     public static void DemoStructural(){
         System.out.println("\nDemo Structural Pattern...");
+        DemoFlyweightPattern();
+        DemoFacadePattern();
         DemoAdapterPattern();
         DemoCompositePattern();
         DemoProxyPattern();
         DemoBridgePattern();
         DemoDecoratorPattern();
     }
+    
+    private static void DemoFlyweightPattern(){
+        System.out.println("\nFlyweight Pattern...");
+        CoffeeShop shop = new CoffeeShop();
+        shop.takeOrder("Cappuccino", 2);
+        shop.takeOrder("Frappe", 1);
+        shop.takeOrder("Espresso", 1);
+        shop.takeOrder("Frappe", 897);
+        shop.takeOrder("Cappuccino", 97);
+        shop.takeOrder("Frappe", 3);
+        shop.takeOrder("Espresso", 3);
+        shop.takeOrder("Cappuccino", 3);
+        shop.takeOrder("Espresso", 96);
+        shop.takeOrder("Frappe", 552);
+        shop.takeOrder("Cappuccino", 121);
+        shop.takeOrder("Espresso", 121);
+        shop.takeOrder("Moka", 2);
+        
+        shop.service();
+        System.out.println("CoffeeFlavor objects in cache: " + CoffeeFlavour.flavourInCache());
+        
+        
+    }
+    
+    private static void DemoFacadePattern(){
+        int opc = 0;
+        System.out.println("\nFacade Pattern...");
+        ShapeMaker shapeMaker = new ShapeMaker();
+     
+        do {
+           System.out.println("1.- Circule");
+           System.out.println("2.- Rectangule");
+           System.out.println("3.- Square");
+           System.out.println("4.- Exit");
+           opc = Integer.parseInt(System.console().readLine("Por favor seleccione alguna de las opciones anteriores: "));
+           
+           shapeMaker.drawShape(opc);
+        } while (opc != 4);    
+    }    
+
      
     private static void DemoAdapterPattern(){
         System.out.println("\nAdapter Pattern...");
