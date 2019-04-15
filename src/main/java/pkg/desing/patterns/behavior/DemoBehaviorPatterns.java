@@ -20,6 +20,11 @@ import pkg.desing.patterns.behavior.mediator.UserImpl;
 import pkg.desing.patterns.behavior.memento.FileWriterCaretaker;
 import pkg.desing.patterns.behavior.memento.FileWriterUtil;
 import pkg.desing.patterns.behavior.template.*;
+import pkg.desing.patterns.behavior.visitor.Book;
+import pkg.desing.patterns.behavior.visitor.Fruit;
+import pkg.desing.patterns.behavior.visitor.ItemElement;
+import pkg.desing.patterns.behavior.visitor.ShoppingCartVisitor;
+import pkg.desing.patterns.behavior.visitor.ShoppingCartVisitorImpl;
 import pkg.desing.patterns.behavior.observer.*;
 import pkg.desing.patterns.behavior.state.State;
 import pkg.desing.patterns.behavior.state.TVContext;
@@ -37,10 +42,35 @@ public class DemoBehaviorPatterns {
         DemoMementoPattern();
         DemoInterpreterPattern();
         DemoIteratorPattern();
+        DemoVisitorPattern();
     }
     
-    private static void DemoCommandPattern(){
+    private static void DemoVisitorPattern(){
+        System.out.println("\nVisitor Pattern");
+        ItemElement[] items = new ItemElement[]{
+          new Book(20, "1234"),
+          new Book(100, "5678"),
+          new Fruit(10,2, "Banana"),
+          new Fruit(5,5, "Apple"),
+        }; 
         
+        int total = calculatePrice(items);
+        System.out.println("Total Cost = " + total);
+    }
+    
+    private static int calculatePrice(ItemElement[] items){
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        
+        int sum = 0;
+        for(ItemElement item :items){
+            sum += item.accept(visitor);
+        }
+        
+        return sum;
+    }
+    
+    
+    private static void DemoCommandPattern(){    
         System.out.println("\nCommand Pattern");
         //Creating the receiver object
         FileSystemReceiver fs = FileSystemReceiverUtil.getUnderlyingFileSystem();

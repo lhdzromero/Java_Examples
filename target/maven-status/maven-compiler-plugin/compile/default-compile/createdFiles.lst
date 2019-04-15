@@ -24,6 +24,8 @@ pkg/desing/patterns/creational/singleton/StaticBlockSingleton.class
 pkg/desing/patterns/behavior/command/Command.class
 pkg/desing/patterns/structural/facade/Circle.class
 pkg/desing/patterns/structural/decorator/LuxuryCar.class
+pkg/desing/patterns/behavior/visitor/ItemElement.class
+pkg/desing/patterns/behavior/visitor/Book.class
 pkg/desing/patterns/creational/singleton/BillPughSingleton$1.class
 pkg/demos/examples/DemoReadXML.class
 pkg/desing/patterns/behavior/memento/FileWriterUtil.class
@@ -65,6 +67,7 @@ pkg/desing/patterns/structural/proxy/CommandExecutorProxy.class
 pkg/desing/patterns/behavior/iterator/ChannelCollection.class
 pkg/desing/patterns/structural/bridge/GreenColor.class
 pkg/demos/examples/HackInmutable.class
+pkg/desing/patterns/behavior/visitor/ShoppingCartVisitorImpl.class
 pkg/desing/patterns/behavior/interpreter/InterpreterContext.class
 pkg/desing/patterns/creational/singleton/SerializedSingleton.class
 pkg/desing/patterns/structural/bridge/Triangule.class
@@ -88,6 +91,8 @@ pkg/desing/patterns/behavior/observer/MyTopic.class
 pkg/desing/patterns/behavior/state/TVStartState.class
 pkg/desing/patterns/structural/bridge/Shape.class
 pkg/desing/patterns/structural/proxy/CommandExecutorImpl.class
+pkg/desing/patterns/behavior/visitor/ShoppingCartVisitor.class
+pkg/desing/patterns/behavior/visitor/Fruit.class
 pkg/desing/patterns/structural/decorator/CarDecorator.class
 pkg/desing/patterns/behavior/iterator/ChannelCollectionImpl$ChannelIteratorImpl.class
 pkg/desing/patterns/behavior/iterator/Channel.class

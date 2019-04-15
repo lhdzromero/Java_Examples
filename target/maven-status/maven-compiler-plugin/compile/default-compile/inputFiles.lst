@@ -1,5 +1,6 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/facade/Rectangule.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoReadXML.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/visitor/ItemElement.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/interpreter/IntToHexExpression.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/TVContext.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/observer/MyTopicSubscriber.java
@@ -16,8 +17,9 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/bridge/BlueColor.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoJava8.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/command/Command.java
-/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/mediator/ChatMediatorImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/command/FileInvoker.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/mediator/ChatMediatorImpl.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/visitor/ShoppingCartVisitor.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/bridge/Triangule.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/DemoStreamsJava8.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/Car.java
@@ -61,8 +63,8 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/MidRangePhone.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/DemoCreationalPatterns.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/HighEndPhone.java
-/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/TVStopState.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/command/FileSystemReceiverUtil.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/TVStopState.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/template/WoodenHouse.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/Computer.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/adapter/Socket.java
@@ -74,6 +76,7 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/command/FileSystemReceiver.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/DemosPatterns.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/Circule.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/visitor/Fruit.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/state/State.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/DrawingShape.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/singleton/EnumSingleton.java
@@ -89,7 +92,9 @@
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/Server.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/factory/ComputerFactory.java
 /projects/Java_Examples/src/main/java/pkg/demos/examples/App.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/visitor/ShoppingCartVisitorImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/structural/composite/Shape.java
+/projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/visitor/Book.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/mediator/UserImpl.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/creational/abstractfactory/SmartPhoneAbstractFactory.java
 /projects/Java_Examples/src/main/java/pkg/desing/patterns/behavior/command/OpenFileCommand.java
