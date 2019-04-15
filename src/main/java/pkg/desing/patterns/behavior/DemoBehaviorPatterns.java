@@ -1,5 +1,11 @@
 package pkg.desing.patterns.behavior;
 
+import pkg.desing.patterns.behavior.command.CloseFileCommand;
+import pkg.desing.patterns.behavior.command.FileInvoker;
+import pkg.desing.patterns.behavior.command.FileSystemReceiver;
+import pkg.desing.patterns.behavior.command.FileSystemReceiverUtil;
+import pkg.desing.patterns.behavior.command.OpenFileCommand;
+import pkg.desing.patterns.behavior.command.WriteFileCommand;
 import pkg.desing.patterns.behavior.interpreter.InterpreterClient;
 import pkg.desing.patterns.behavior.interpreter.InterpreterContext;
 import pkg.desing.patterns.behavior.iterator.Channel;
@@ -23,6 +29,7 @@ import pkg.desing.patterns.behavior.state.TVStopState;
 public class DemoBehaviorPatterns {
     
     public static void DemoBehaviors(){
+        DemoCommandPattern();
         DemoTemplatePattern();
         DemoMediatorPattern();
         DemoObserverPattern();
@@ -31,6 +38,32 @@ public class DemoBehaviorPatterns {
         DemoInterpreterPattern();
         DemoIteratorPattern();
     }
+    
+    private static void DemoCommandPattern(){
+        
+        System.out.println("\nCommand Pattern");
+        //Creating the receiver object
+        FileSystemReceiver fs = FileSystemReceiverUtil.getUnderlyingFileSystem();
+        
+        //Creating command and associating with receiver
+        OpenFileCommand openFileCommand = new OpenFileCommand(fs);
+        
+        //Creating command and associating with command
+        FileInvoker file = new FileInvoker(openFileCommand);
+        
+        //perform action on invoker object
+        file.execute();
+        
+        WriteFileCommand writeFileCommand = new WriteFileCommand(fs);
+        file = new FileInvoker(writeFileCommand);
+        file.execute();
+        
+        CloseFileCommand closeFileCommand = new CloseFileCommand(fs);
+        file = new FileInvoker(closeFileCommand);
+        file.execute();
+    }
+    
+    
     
     
     private static void DemoIteratorPattern(){

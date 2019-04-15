@@ -21,13 +21,13 @@ public class DemoStructuralPatterns {
     
     public static void DemoStructural(){
         System.out.println("\nDemo Structural Pattern...");
-        DemoFlyweightPattern();
+        //DemoFlyweightPattern();
         DemoFacadePattern();
-        DemoAdapterPattern();
-        DemoCompositePattern();
-        DemoProxyPattern();
-        DemoBridgePattern();
-        DemoDecoratorPattern();
+        //DemoAdapterPattern();
+        //DemoCompositePattern();
+        //DemoProxyPattern();
+        //DemoBridgePattern();
+        //DemoDecoratorPattern();
     }
     
     private static void DemoFlyweightPattern(){
