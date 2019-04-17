@@ -1,5 +1,9 @@
 package pkg.desing.patterns.behavior;
 
+import java.util.Scanner;
+
+import pkg.desing.patterns.behavior.chainrespons.ATMDispenseChain;
+import pkg.desing.patterns.behavior.chainrespons.Currency;
 import pkg.desing.patterns.behavior.command.CloseFileCommand;
 import pkg.desing.patterns.behavior.command.FileInvoker;
 import pkg.desing.patterns.behavior.command.FileSystemReceiver;
@@ -30,6 +34,10 @@ import pkg.desing.patterns.behavior.state.State;
 import pkg.desing.patterns.behavior.state.TVContext;
 import pkg.desing.patterns.behavior.state.TVStartState;
 import pkg.desing.patterns.behavior.state.TVStopState;
+import pkg.desing.patterns.behavior.strategy.CreditCardStrategy;
+import pkg.desing.patterns.behavior.strategy.Item;
+import pkg.desing.patterns.behavior.strategy.PaypalStrategy;
+import pkg.desing.patterns.behavior.strategy.ShoppingCart;
  
 public class DemoBehaviorPatterns {
     
@@ -43,6 +51,47 @@ public class DemoBehaviorPatterns {
         DemoInterpreterPattern();
         DemoIteratorPattern();
         DemoVisitorPattern();
+        DemoStrategyPattern();
+        DemoChainResposibilityPattern();
+    }
+    
+    private static void DemoChainResposibilityPattern(){
+        ATMDispenseChain atmDispenser = new ATMDispenseChain();
+        
+        System.out.println("\nChain of Resposibility Pattern");
+        
+        while(true){
+            int amount = 0;
+            System.out.println("\nEnter amount to dispense: ");
+            Scanner input = new Scanner(System.in);
+    
+            amount = input.nextInt();
+            
+            if (amount % 10 != 0){
+                System.out.println("Amount should be in multiple of 10s");
+                return;
+            }
+            
+            atmDispenser.c1.dispense(new Currency(amount));
+        }
+    }
+    
+    private static void DemoStrategyPattern(){
+        System.out.println("\nStrategy Pattern");
+        
+        ShoppingCart cart = new ShoppingCart();
+    
+        Item item1 = new Item("1234", 10);
+        Item item2 = new Item("5678", 40);
+        
+        cart.addItem(item1);
+        cart.addItem(item2);
+        
+        //pay by paypal
+        cart.pay(new PaypalStrategy("ainCreditCardStrategy(null, null, null, null)@gmail.com", "pwdsecret"));
+       
+       //pay by credit card
+        cart.pay( new CreditCardStrategy("Aidan Hernandez ", "55012345678901234","123", "11/25"));
     }
     
     private static void DemoVisitorPattern(){
